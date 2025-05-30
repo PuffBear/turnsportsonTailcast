@@ -1,26 +1,17 @@
 import { motion } from "framer-motion";
 
-import blog1 from "../assets/images/blog1.png";
+import blog1 from "../assets/images/blog1.jpg";
 import blog2 from "../assets/images/blog2.png";
 import blog3 from "../assets/images/blog3.png";
 
 const blogData = [
   {
-    title: "AI and Machine Learning",
+    title: "Framework behind our models",
     subtitle:
-      "Discover insights and trends in the world of data analytics. Delve into how AI and machine learning are revolutionizing industries",
+      "Discover insights and trends in the world of sports analytics using ML. Delve into how AI and machine learning are revolutionizing this industry.",
     image: blog1.src,
   },
-  {
-    title: "Data-Driven Analytics",
-    subtitle: "Explore the impact of AI and ML on data analytics.",
-    image: blog2.src,
-  },
-  {
-    title: "Real-Time Data Processing",
-    subtitle: "Learn about the importance of processing real-time.",
-    image: blog3.src,
-  },
+  //{ title: "Data-Driven Analytics", subtitle: "Explore the impact of AI and ML on data analytics.", image: blog2.src, },
 ];
 
 export const Blog = () => (
@@ -35,12 +26,12 @@ export const Blog = () => (
       >
         <div className="container px-4 mb-20">
           <div className="max-w-2xl text-center lg:text-left mb-16 mx-auto lg:ml-0 lg:mr-0">
-            <span className="block-subtitle">Our Blog</span>
+            <span className="block-subtitle">our publications</span>
             <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-bold font-heading text-primaryText">
-              Latest Insights
+              latest insights
             </h2>
             <p className="mb-6 text-secondaryText">
-              Stay updated with the latest trends and insights in our industry.
+              stay updated with the latest trends and insights in our industry and how we use them.
             </p>
           </div>
           <div className="flex 2xl:w-[1200px] lg:w-[1000px] xl:w-[1150px] flex-wrap -mx-4 items-start h-auto sm:h-[30rem] lg:h-[31rem]  xl:h-[35rem]">

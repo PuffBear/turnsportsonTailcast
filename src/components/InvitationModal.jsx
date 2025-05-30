@@ -23,26 +23,13 @@ export const InvitationModal = ({ setIsOpen }) => (
           <div className="flex relative">
             <div className="w-1/2 hidden lg:inline">
               <h2 className="mt-6 mb-2 text-5xl font-bold tracking-normal text-primaryText">
-                Subscribe Now
+                stop waiting
               </h2>
               <h2 className="text-5xl font-bold tracking-normal text-secondaryColor">
-                Winter is coming
+                sports is all year
               </h2>
 
-              <ul className="mb-6 text-primaryText mt-12">
-                <li className="mb-4 flex">
-                  <CheckArrowIcon />
-                  <span>Vestibulum viverra</span>
-                </li>
-                <li className="mb-4 flex">
-                  <CheckArrowIcon />
-                  <span>Morbi mollis metus pretium</span>
-                </li>
-                <li className="mb-4 flex">
-                  <CheckArrowIcon />
-                  <span>Etiam lectus nunc, commodo</span>
-                </li>
-              </ul>
+              
             </div>
             <div className="w-full lg:w-1/2 flex items-center flex-col justify-center pt-24 sm:pt-0">
               <div className="flex inline lg:hidden justify-start items-center grow basis-0 mb-8 pr-6">
@@ -55,7 +42,7 @@ export const InvitationModal = ({ setIsOpen }) => (
               </div>
 
               <h3 className="mb-7 text-2xl text-primaryText font-bold leading-snug text-center">
-                Join 3,953 other developers
+                Join other sports enthusiasts
               </h3>
               <div className="flex flex-wrap -m-2">
                 <div className="w-full sm:w-4/5 p-2 mx-auto">

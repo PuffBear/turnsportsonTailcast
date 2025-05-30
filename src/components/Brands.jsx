@@ -1,13 +1,10 @@
-import { motion } from "framer-motion";
+ import { motion } from "framer-motion";
 
-import { AmazonLogo } from "../assets/logos/AmazonLogo";
-import { DropboxLogo } from "../assets/logos/DropboxLogo";
-import { NetflixLogo } from "../assets/logos/NetflixLogo";
-import { SlackLogo } from "../assets/logos/SlackLogo";
-import { SpotifyLogo } from "../assets/logos/SpotifyLogo";
-import { StripeLogo } from "../assets/logos/StripeLogo";
+ import { AmazonLogo } from "../assets/logos/AmazonLogo";
+ import { DropboxLogo } from "../assets/logos/DropboxLogo";
+ import { StripeLogo } from "../assets/logos/StripeLogo";
 
-export const Brands = () => (
+ export const Brands = () => (
   <section className="py-12 sm:py-24 bg-bgDark1 w-full  lg:mt-16 mb-8 lg:mb-16">
     <motion.div
       initial={{ opacity: 0 }}
@@ -20,7 +17,7 @@ export const Brands = () => (
           <div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
             <div className="flex flex-col">
               <h2 className="mb-2  text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-primaryText">
-                Trusted by brands
+                using brands trusted
               </h2>
               <h2 className=" text-4xl  sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-secondaryColor">
                 all over the world
@@ -35,18 +32,8 @@ export const Brands = () => (
               <div className="w-1/2 sm:w-1/3 py-6 flex  justify-center">
                 <DropboxLogo />
               </div>
-              <div className="w-1/2 sm:w-1/3 py-6 flex  justify-center">
-                <NetflixLogo />
-              </div>
               <div className="w-1/2 sm:w-1/3 py-6 flex justify-center">
                 <StripeLogo />
-              </div>
-
-              <div className="w-1/2 sm:w-1/3 py-6 flex justify-center">
-                <SpotifyLogo />
-              </div>
-              <div className="w-1/2 sm:w-1/3  py-6 flex  justify-center">
-                <SlackLogo />
               </div>
             </div>
           </div>
@@ -54,4 +41,14 @@ export const Brands = () => (
       </div>
     </motion.div>
   </section>
-);
+ );
+
+// <div className="w-1/2 sm:w-1/3 py-6 flex  justify-center">
+// <NetflixLogo />
+// </div>
+// <div className="w-1/2 sm:w-1/3 py-6 flex justify-center">
+//   <SpotifyLogo />
+// </div>
+// <div className="w-1/2 sm:w-1/3  py-6 flex  justify-center">
+//   <SlackLogo />
+// </div>

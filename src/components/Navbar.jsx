@@ -1,15 +1,17 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { TailcastLogo } from "../assets/logos/TailcastLogo";
+
 import { GithubIcon } from "../assets/icons/GithubIcon";
 
 const navbarLinks = [
-  { label: "Home", href: "/#home", ariaLabel: "Home" },
+//  { label: "Home", href: "/#home", ariaLabel: "Home" },
   { label: "Features", href: "/#features", ariaLabel: "Features" },
   { label: "Pricing", href: "/#pricing", ariaLabel: "Pricing" },
   { label: "Feedback", href: "/#feedback", ariaLabel: "Feedback" },
+  { label: "Publications", href: "/#blog", ariaLabel: "Blog"},
   { label: "FAQ", href: "/#FAQ", ariaLabel: "FAQ" },
+  { label: "Predictions", href: "/#predictions", ariaLabel: "Predictions"},
 ];
 
 export const Navbar = () => {
@@ -29,11 +31,9 @@ export const Navbar = () => {
         >
           <a href="/#home" aria-label="Home">
             <div className="flex justify-start items-center grow basis-0">
-              <div className="text-white mr-2 text-6xl">
-                <TailcastLogo />
-              </div>
+              
               <div className="text-white font-['Inter'] font-bold text-xl">
-                Tailcast
+                turnsports.ai
               </div>
             </div>
           </a>
@@ -64,16 +64,17 @@ export const Navbar = () => {
           exit={{ opacity: 0 }}
         >
           <div className="grow basis-0 justify-end hidden lg:flex">
-            <a
-              className="text-white main-border-gray rounded-xl
-           bg-bgDark2 hover:bg-bgDark3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-              href="https://github.com/matt765/Tidestream"
-              target="_blank"
-              aria-label="source code"
-            >
-              <GithubIcon />
-              <span className="pt-px">Source code</span>
-            </a>
+          <a
+            className="text-white main-border-gray rounded-xl
+            bg-bgDark2 hover:bg-bgDark3 border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
+            href="/account"
+            aria-label="Account page"
+          >
+            <svg className="w-4 h-4 mr-2 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5.121 17.804A11.962 11.962 0 0112 15c2.761 0 5.305.935 7.121 2.804M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <span className="pt-px">Account</span>
+          </a>
           </div>
         </motion.div>
         <div
@@ -111,12 +112,13 @@ export const Navbar = () => {
                 </a>
               ))}
               <a
-                className="outlined-button pl-6 pr-8 pt-2 pb-2  flex"
-                href="https://github.com/matt765/Tidestream"
-                target="_blank"
+                className="outlined-button pl-6 pr-8 pt-2 pb-2 flex"
+                href="/account"
               >
-                <GithubIcon />
-                Source code
+                <svg className="w-4 h-4 mr-2 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5.121 17.804A11.962 11.962 0 0112 15c2.761 0 5.305.935 7.121 2.804M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                Account
               </a>
             </div>
           </motion.div>

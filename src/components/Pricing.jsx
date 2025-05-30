@@ -5,11 +5,21 @@ import { InvitationModal } from "./InvitationModal";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
 const pricingData = [
-  "Seamless integration",
-  "Real-time data visualization",
-  "Advanced predictive analytics",
-  "Collaborative environment",
-  "Responsive customer support",
+  "real-time data predictions",
+  "advanced predictive analytics",
+  "responsive customer support",
+];
+
+const standardPricingData = [
+  "high EV Predictions",
+  "premium Bets",
+  "along with every basic feature",
+];
+
+const premiumPricingData = [
+  "specialised Bookmaker Analysis",
+  "analytics Reports",
+  "along with every standard feature"
 ];
 
 export const Pricing = () => {
@@ -34,10 +44,10 @@ export const Pricing = () => {
             <div className="max-w-2xl mx-auto text-center mb-16">
               <span className="block-subtitle">Find Your Perfect Fit</span>
               <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-bold font-heading text-primaryText">
-                Choose your best plan
+                choose your best plan
               </h2>
               <p className="mb-6 text-secondaryText">
-                Select the plan that suits your needs and benefit from our
+                select the plan that suits your needs and benefit from our
                 analytics tools.
               </p>
               <label className="mx-auto bg-bgDark3 relative flex justify-between items-center group text-xl w-44 h-12 rounded-lg pr-36 pl-1 cursor-pointer">
@@ -64,18 +74,18 @@ export const Pricing = () => {
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
                 <div className="p-8 bg-bgDark3 rounded-3xl">
                   <h3 className="mb-2 text-xl font-bold font-heading text-primaryText text-left">
-                    Beginner
+                    basic
                   </h3>
                   <div className="flex justify-start items-end">
                     <div className="text-4xl sm:text-5xl font-bold text-primaryText text-left mt-4 mr-2">
-                      $0
+                      ₹0
                     </div>
                     <div className="text-gray-500">
                       {isMonthly ? "/ month" : "/ year"}
                     </div>
                   </div>
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
-                    The perfect way to get started and get used to our tools.
+                    the perfect way to get started and get used to our tools.
                   </p>
                   <ul className="mb-2 2xl:mb-6 text-primaryText">
                     {pricingData.map((text, index) => (
@@ -97,21 +107,21 @@ export const Pricing = () => {
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
                 <div className="px-8 py-8 bg-bgDark3 rounded-3xl">
                   <h3 className="mb-2 2xl:mb-4 text-2xl font-bold font-heading text-primaryText text-left">
-                    Standard
+                    standard
                   </h3>
                   <div className="flex justify-start items-end">
                     <div className="text-4xl sm:text-5xl font-bold text-primaryText text-left mt-4 mr-2">
-                      {isMonthly ? "$19" : "$180"}
+                      {isMonthly ? "₹250" : "₹2000"}
                     </div>
                     <div className="text-gray-500">
                       {isMonthly ? "/ month" : "/ year"}
                     </div>
                   </div>
                   <p className="mt-8 mb-8 2xl:mb-12 text-gray-500 leading-loose text-left">
-                    Unlock more features and elevate your data analysis.
+                    unlock more features and elevate your data analysis.
                   </p>
                   <ul className="mb-14 text-primaryText">
-                    {pricingData.map((text, index) => (
+                    {standardPricingData.map((text, index) => (
                       <li className="mb-4 flex" key={`${text}-${index}`}>
                         <CheckArrowIcon />
                         <span>{text}</span>
@@ -130,21 +140,21 @@ export const Pricing = () => {
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
                 <div className="p-8 bg-bgDark3 rounded-3xl">
                   <h3 className="mb-2 text-xl font-bold font-heading text-primaryText text-left">
-                    Premium
+                    premium
                   </h3>
                   <div className="flex justify-start items-end">
                     <div className="text-4xl sm:text-5xl font-bold text-primaryText text-left mt-4 mr-2">
-                      {isMonthly ? "$36" : "$390"}
+                      {isMonthly ? "₹600" : "₹5500"}
                     </div>
                     <div className="text-gray-500">
                       {isMonthly ? "/ month" : "/ year"}
                     </div>
                   </div>
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
-                    Experience the full power of our analytic platform
+                    experience the full power of our analytic platform
                   </p>
                   <ul className="mb-2 2xl:mb-6 text-primaryText">
-                    {pricingData.map((text, index) => (
+                    {premiumPricingData.map((text, index) => (
                       <li className="mb-4 flex" key={`${text}-${index}`}>
                         <CheckArrowIcon />
                         <span>{text}</span>

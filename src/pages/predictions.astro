@@ -1,0 +1,18 @@
+import Layout from '../layouts/Layout.astro'
+import { Hero } from '../components/Hero.jsx'
+import { Navbar } from '../components/Navbar.jsx'
+import { Footer } from '../components/Footer.jsx'
+import { ScrollUpButton } from '../components/ScrollUpButton'
+import { FAQ } from '../components/FAQ.jsx'
+import '../styles/Theme.css'
+---
+
+<Layout title="">
+  <Navbar client:load />
+  <Hero client:load />
+  
+
+  <FAQ client:load /> 
+  <Footer />
+  <ScrollUpButton client:load />
+</Layout>
