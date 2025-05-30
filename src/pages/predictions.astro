@@ -1,17 +1,17 @@
-import Layout from '../layouts/Layout.astro'
-import { Hero } from '../components/Hero.jsx'
-import { Navbar } from '../components/Navbar.jsx'
-import { Footer } from '../components/Footer.jsx'
-import { ScrollUpButton } from '../components/ScrollUpButton'
-import { FAQ } from '../components/FAQ.jsx'
-import '../styles/Theme.css'
+---
+import Layout          from '../layouts/Layout.astro';
+import { Navbar }          from '../components/Navbar.jsx';
+import { Hero }            from '../components/Hero.jsx';
+import { Predictions }     from '../components/Predictions.jsx';
+import { FAQ }             from '../components/FAQ.jsx';
+import { Footer }          from '../components/Footer.jsx';
+import { ScrollUpButton }  from '../components/ScrollUpButton.jsx';
+import '../styles/Theme.css';
 ---
 
-<Layout title="">
+<Layout title="turnsports.ai">
   <Navbar client:load />
-  <Hero client:load />
-  
-
+  <Predictions client:load />
   <FAQ client:load /> 
   <Footer />
   <ScrollUpButton client:load />
