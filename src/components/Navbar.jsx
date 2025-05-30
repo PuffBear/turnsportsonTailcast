@@ -11,7 +11,7 @@ const navbarLinks = [
   { label: "Feedback", href: "/#feedback", ariaLabel: "Feedback" },
   { label: "Publications", href: "/#blog", ariaLabel: "Blog"},
   { label: "FAQ", href: "/#FAQ", ariaLabel: "FAQ" },
-  { label: "Predictions", href: "/#predictions", ariaLabel: "Predictions"},
+  { label: "Predictions", href: "/predictions", ariaLabel: "Predictions"},
 ];
 
 export const Navbar = () => {
